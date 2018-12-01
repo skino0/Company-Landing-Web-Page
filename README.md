@@ -4,7 +4,7 @@
 
 ## Description:
 
-**Here is one sample company landing lage that i starting making and still under construction , is one project that i though to continiue step by step and take my time to give a good result at the end of it **
+Here is one sample company landing lage that i starting making and still under construction , is one project that i though to continiue step by step and take my time to give a good result at the end of it 
 
 ---
 
