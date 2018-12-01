@@ -43,7 +43,7 @@ Uploaded **ONLY** the index file of web page that Includes the following feature
 
 ## License:
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/skino0/UI-Left-Side-Slide-Menu-/blob/master/license.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/skino0/Company-Landing-Web-Page/blob/master/license.md) file for details
 
 ---
 
