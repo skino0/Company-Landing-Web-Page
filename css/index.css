@@ -1,0 +1,247 @@
+
+body{
+    margin:0;
+    padding:0;
+    background:#00a8ff;
+    z-index:-3;
+    overflow:hidden;
+}
+
+#bg {
+    position:absolute;
+    width:100vw;
+    height:80vh;
+    background-color:rgba(54, 71, 83, .5);
+    top:70px;
+    z-index:-1;
+    box-shadow:0px 0px 11px 12px rgba(193, 64, 41, .95),
+    -5px 0px 24px 25px rgba(193, 64, 41, .95);
+    animation-fill-mode:both;
+    animation:shadows 8s infinite;
+}
+
+@keyframes shadows {
+
+    0%,40%,80%,100%{
+        box-shadow:0px 0px 22px 10px rgba(4, 76, 112, 0.9),
+        -5px 0px 15px 10px rgba(211, 211, 211, 0.9);
+
+    }
+
+    30%,50%,70%,90% {
+        box-shadow:0px 0px 21px 15px rgba(4, 76, 112, 0.9),
+        -5px 0px 22px 15px rgba(211, 211, 211, 0.9);
+
+    }
+
+
+}
+
+#footer {
+    position:absolute;
+    z-index:-2;
+    background-color:rgba(0,0,0,.5);
+    -webkit-clip-path: polygon(28% 94%, 77% 94%, 90% 100%, 10% 100%);
+    clip-path: polygon(28% 94%, 77% 94%, 90% 100%, 10% 100%);
+    width:100vw;
+    height:100vh;
+
+}
+
+
+#logo {
+    position:absolute;
+    width:410px;
+    height:410px;
+    top:45%;
+    left:50%;
+    transform:translate(-45%,-50%)scale(1);
+    margin:0 0 0 5px;
+    animation-fill-mode:both;
+    animation:logojoin 2s forwards;
+    -webkit-animation-fill-mode:both;
+    -webkit-animation:logojoin 2s forwards;
+    -moz-animation-fill-mode:both;
+    -moz-animation:logojoin 2s forwards;
+    -ms-animation-fill-mode:both;
+    -ms-animation:logojoin 2s forwards;
+    pointer-events:none;
+
+}
+
+@keyframes logojoin {
+0%{opacity:0;top:45%;left:50%;width:410px;height:350px;
+transform:translate(-50%,-45%)scale(1);}
+30%{transform:translate(-50%,-45%)scale(1.2);
+top:45%;left:50%;width:410px;height:350px;}
+60%{top:45%;left:50%;opacity:1;transform:translate(-50%,-45%)scale(1)rotate(0);
+width:410px;height:350px;}
+80%{transform:translate(-40px,-55%)scale(1)rotate(80deg);}
+100%{top:55%;left:40px;
+width:300px;height:280px;
+transform:translate(-40px,-55%)scale(1)rotate(0deg);}}
+@-webkit-keyframes logojoin {
+0%{opacity:0;top:45%;left:50%;width:410px;height:350px;
+transform:translate(-50%,-45%)scale(1);}
+30%{transform:translate(-50%,-45%)scale(1.2);
+top:45%;left:50%;width:410px;height:350px;}
+60%{top:45%;left:50%;opacity:1;transform:translate(-50%,-45%)scale(1)rotate(0);
+width:410px;height:350px;}
+80%{transform:translate(-40px,-55%)scale(1)rotate(80deg);}
+100%{top:55%;left:40px;
+width:300px;height:280px;
+transform:translate(-40px,-55%)scale(1)rotate(0deg);}}
+@-moz-keyframes logojoin {
+0%{opacity:0;top:45%;left:50%;width:410px;height:350px;
+transform:translate(-50%,-45%)scale(1);}
+30%{transform:translate(-50%,-45%)scale(1.2);
+top:45%;left:50%;width:410px;height:350px;}
+60%{top:45%;left:50%;opacity:1;transform:translate(-50%,-45%)scale(1)rotate(0);
+width:410px;height:350px;}
+80%{transform:translate(-40px,-55%)scale(1)rotate(80deg);}
+100%{top:55%;left:40px;
+width:300px;height:280px;
+transform:translate(-40px,-55%)scale(1)rotate(0deg);}}
+@-ms-keyframes logojoin {
+0%{opacity:0;top:45%;left:50%;width:410px;height:350px;
+transform:translate(-50%,-45%)scale(1);}
+30%{transform:translate(-50%,-45%)scale(1.2);
+top:45%;left:50%;width:410px;height:350px;}
+60%{top:45%;left:50%;opacity:1;transform:translate(-50%,-45%)scale(1)rotate(0);
+width:410px;height:350px;}
+80%{transform:translate(-40px,-55%)scale(1)rotate(80deg);}
+100%{top:55%;left:40px;
+width:300px;height:280px;
+transform:translate(-40px,-55%)scale(1)rotate(0deg);}}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+#title {
+    position:absolute;
+    color:rgb(219, 219, 219);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 8.5px;
+    font-size:35px;
+    line-height:40px;
+    font-weight:400;
+    top:20%;
+    left:0;
+    transform:translateY(-20%);
+    padding-left:40px;
+    display:inline-block;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    animation-delay:1.5s!important;
+    animation:header 2.5s steps(170, end);
+    animation-fill-mode:both;
+    -webkit-animation-delay:1.5s!important;
+    -webkit-animation:header 2.5s steps(170, end);
+    -webkit-animation-fill-mode:both;
+    -moz-animation-delay:1.5s!important;
+    -moz-animation:header 2.5s steps(170, end);
+    -moz-animation-fill-mode:both;
+    -ms-animation-delay:1.5s!important;
+    -ms-animation:header 2.5s steps(170, end);
+    -ms-animation-fill-mode:both;
+    text-shadow:2px 2px 1px #000000;
+    user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+
+  }
+  
+@keyframes header {
+0% {display:none;width: 0%;opacity:0;}
+85%{opacity:1;width: 85%;}
+100% {width: 100%;display:inline-block;opacity:1;}}
+@-webkit-keyframes header {
+0% {display:none;width: 0%;opacity:0;}
+85%{opacity:1;width: 85%;}
+100% {width: 100%;display:inline-block;opacity:1;}}
+@-moz-keyframes header {
+0% {display:none;width: 0%;opacity:0;}
+85%{opacity:1;width: 85%;}
+100% {width: 100%;display:inline-block;opacity:1;}}
+@-ms-keyframes header {
+0% {display:none;width: 0%;opacity:0;}
+85%{opacity:1;width: 85%;}
+100% {width: 100%;display:inline-block;opacity:1;}}
+
+  #subtitle {
+    font-size:30px;
+    color:#40bcfa;
+    letter-spacing:5px;
+    font-weight:500;
+    text-shadow:2px 2px 1px rgba(0,0,0,.7);
+
+  }
+
+  #desccontainer {
+    position:absolute;
+    top:51%;
+    right:-70%;
+    transform:translate(70%,-51%);
+    padding:0 110.5px 0 0;
+    animation-delay:2s!important;
+    animation-fill-mode:both;
+    animation:desc 1s forwards;
+  }
+  @keyframes desc {
+    0%{
+      top:51%;
+      right:-70%;
+      transform:translate(70%,-51%);
+
+    }
+    50%{
+      top:51%;
+      right:5%;
+      transform:translate(-5%,-51%);
+
+    }
+    100%{
+      top:51%;
+      right:0%;
+      transform:translate(0%,-51%);
+      
+    }
+
+  }
+  #indexdesc {
+    z-index:2;
+    width:550px;
+    font-size:23px;
+    color:rgb(226, 226, 226);
+    letter-spacing:5px;
+    text-align:right;
+    font-family: 'Montserrat', sans-serif;
+    line-height:35px;
+  }
+
+
+  #joinus {
+    text-decoration:none;
+    float:right;
+    letter-spacing:2px;
+    font-size:22px;
+    padding-right:10px;
+    font-family: sans-serif;
+    color:rgb(187, 187, 187);
+    font-weight:700;
+    text-shadow:2.5px 1.5px 0px #0b3177,
+    -2px -1px 0px #3a3a3a;
+    line-height:50px;
+    transition-duration:.4s;
+
+  }
+
+  #joinus:hover {
+    transition-duration:.2s;
+    text-shadow:2.5px 1.5px 0px #000000;
+    cursor:pointer;
+  }
+
+

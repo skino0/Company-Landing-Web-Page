@@ -1,0 +1,64 @@
+#nav {
+    position:absolute;
+    list-style: none;
+    display:flex;
+    top:20%;
+    right:0%;
+    transform:translateY(-20%);
+    margin:40px 0 0 0;
+    padding:0 100px 0 0;
+    z-index:-10;
+    animation-delay:3s!important;
+    animation-fill-mode:both;
+    animation:navjoin 1.2s forwards;
+    opacity:0;
+}
+
+@keyframes navjoin {
+    0%{
+        z-index:-10;
+        opacity:0;
+        transform:translateY(-20%) scale(0);
+    }
+    50%{
+        opacity:1;
+        transform:translateY(-20%) scale(1.15);
+
+    }
+    100%{
+        z-index:5;
+        opacity:1;
+        transform:translateY(-20%) scale(1);
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.navitem {
+    font-size:19px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:27px;
+    letter-spacing:7.5px;
+    color:rgb(51, 51, 51);
+    font-weight:500;
+    border-top:1px rgba(196, 196, 196, 0.85) solid;
+    border-bottom:1px rgba(196, 196, 196, 0.85) solid;
+    margin:0 3px 0 3px;
+    line-height:45px;
+    padding:0px 7.5px 0 15px;
+    -webkit-clip-path: polygon(40% 0, 60% 0, 100% 20%, 100% 80%, 60% 100%, 40% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(40% 0, 60% 0, 100% 20%, 100% 80%, 60% 100%, 40% 100%, 0% 80%, 0% 20%);
+    transition-duration:.2s;
+    text-shadow:-1.2px 0px 0px #272727;
+
+}
+
+.navitem:hover{
+    transition-duration:.2s;
+    color:#ccc;
+    cursor:pointer;
+    border-top:1px #ccc solid;
+    border-bottom:1px #ccc solid;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
